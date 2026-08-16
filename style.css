@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    /* Seu banner de fundo */
+    background-image: url('borracha.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    /* Camada escura transparente para o texto ficar legível */
+    box-shadow: inset 0 0 0 1000px rgba(15, 23, 42, 0.75);
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+}
+
+.perfil {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #f472b6;
+    box-shadow: 0 0 25px rgba(244, 114, 182, 0.4);
+    margin-bottom: 15px;
+}
+
+.perfil h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.subtitulo {
+    color: #f472b6;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.botao {
+    background: linear-gradient(90deg, #22d3ee 0%, #f97316 100%);
+    color: white;
+    text-decoration: none;
+    padding: 18px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    border: 3px solid #f472b6;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.botao:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(244, 114, 182, 0.5);
+}
